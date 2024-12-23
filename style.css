@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
     background-color :#000;
     margin: 0%;
@@ -84,13 +88,14 @@ video{
 }
 
 .imagem-carrossel{
-    height: 158px;
+    height: 290px;
+
 }
 
 #carouselExampleControls{
     background-color: transparent;
     position: absolute;
-    bottom: -100px;
+    bottom: -200px;
     left: 20px;
    
 
@@ -132,3 +137,44 @@ video{
 
 }
 
+@media (max-width: 900px){
+
+ul{
+    width: 90%;
+}
+
+.img-topo{
+    height: 15px;
+
+}    
+
+video{
+   height: 20vh;
+   width: 100vw;
+}    
+.capa{
+
+    display:none;
+}
+
+ .imagem-carrossel{
+   
+    height: 70px;
+
+    }
+
+.titulo-carrossel{
+    font-size: 14px;
+}
+
+#carouselExampleControls{
+    bottom: -120px;
+    width: 70vw;
+}
+.botao-som{
+  right: 5%;
+}
+
+
+
+}
